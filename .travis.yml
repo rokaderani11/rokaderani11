@@ -1,0 +1,11 @@
+language: python
+python:
+  - "2.7"
+cache: pip
+install:
+  - pip install codecov
+script:
+  - coverage run file.py
+  
+after_success:
+  - codecov
