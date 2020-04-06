@@ -5,7 +5,7 @@ cache: pip
 install:
   - pip install codecov
 script:
-  - coverage run file.py
+  - coverage run samplefile.py
   
 after_success:
   - codecov
